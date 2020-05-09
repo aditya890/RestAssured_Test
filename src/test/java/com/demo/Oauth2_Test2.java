@@ -17,7 +17,7 @@ public class Oauth2_Test2 {
 			//https://developer.paypal.com/classic-home/
 			//sign up and provide your info and don't link card  and hit the url again on providing details.
 			//create an app and take ur client id and secret
-	@Test(priority=1)
+	     @Test (priority=1)
 		public void getAccessTokenViaPreemptiveAuthentication() {
 			RestAssured.baseURI = "https://api.sandbox.paypal.com";
 			RestAssured.basePath = "v1";
@@ -31,7 +31,7 @@ public class Oauth2_Test2 {
 			res.prettyPrint();
 		}
 
-		@Test(priority=2)
+		
 		public void doingPaymentWithOauth2Autentication()
 		{
 			String rootPath = System.getProperty("user.dir");

@@ -2,7 +2,9 @@ package com.demo;
 
 
 
-import org.junit.Test;
+
+
+import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

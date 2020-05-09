@@ -11,7 +11,8 @@ import io.restassured.response.Response;
 public class OAuth2_Test {
  
 	static String accessToken;
-	@Test(priority=1)
+	
+	 	@Test (priority=1)
 		public void getAccessTokenViaPreemptiveAuthentication() {
 			RestAssured.baseURI = "https://api.sandbox.paypal.com";
 			RestAssured.basePath = "v1";
@@ -24,7 +25,7 @@ public class OAuth2_Test {
 			res.prettyPrint();
 		}
 
-		@Test(priority=2)
+	 	@Test (priority=2)
 		public void doingPaymentWithOauth2Autentication()
 		{
 			String rootPath = System.getProperty("user.dir");

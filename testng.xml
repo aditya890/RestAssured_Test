@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.demo.BasicAuthentication"/>
+      <class name="com.demo.Oauth2_Test2"/>
+      <class name="com.demo.UploadFileRest"/>
+      <class name="com.demo.RestCurdTest"/>
+      <class name="com.demo.RestCurdTestNg"/>
+      <class name="com.demo.QueryParam_Test"/>
+      <class name="com.demo.Deserialization_Cmlx_Rspns"/>
+      <!-- <class name="com.demo.OAuth1_Test"/> -->
+      <class name="com.demo.OAuth2_Test"/>
+      <class name="com.demo.Cmplx_Serializ_Deserialize"/>
+      <class name="com.demo.DataProvider_Rest"/>
+      <class name="com.demo.RestPathParam"/>
+      <class name="com.demo.RestDemo"/>
+      <class name="com.demo.RestAssured_Log"/>
+      <class name="com.demo.RestSerialization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

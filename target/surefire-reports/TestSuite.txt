@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.519 s <<< FAILURE! - in TestSuite
+doingPaymentWithOauth2Autentication(com.demo.UploadFileRest)  Time elapsed: 1.756 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at com.demo.UploadFileRest.doingPaymentWithOauth2Autentication(UploadFileRest.java:27)
+
+update(com.demo.RestCurdTestNg)  Time elapsed: 1.621 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [404]
+	at com.demo.RestCurdTestNg.update(RestCurdTestNg.java:61)
+

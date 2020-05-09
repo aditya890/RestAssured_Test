@@ -2,10 +2,12 @@ package com.demo;
 
 import java.io.File;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+
 
 
 public class UploadFileRest {
@@ -21,8 +23,8 @@ public class UploadFileRest {
 		String endpoint="​/pet​/52​/uploadFile";
 		
 		//upload file
-		RestAssured.given().log().all().formParam("additionalMetadata","test the file").multiPart(file);
-		
+		Response res = 	RestAssured.given().formParam("additionalMetadata","test the file").multiPart(file).post(endpoint);
+		Assert.assertEquals(res.getStatusCode(),200);
 		//download file
 //		Response res = RestAssured.given().log().all().auth().oauth("consumerSecret", "accessToken", "secretToken", "endpoint").get("endpoint");
 //		
