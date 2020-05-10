@@ -50,6 +50,6 @@ public class JsonSchemaValidation {
 				
 				res.then().body(matchesJsonSchema(file));
 				//res.then().log().all();
-				System.out.println();
+	
 }
 }
