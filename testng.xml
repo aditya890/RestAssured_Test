@@ -18,6 +18,9 @@
       <class name="com.demo.RestDemo"/>
       <class name="com.demo.RestAssured_Log"/>
       <class name="com.demo.RestSerialization"/>
+      <class name="com.demo.JsonSchemaValidation"/>
+      
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
